@@ -105,11 +105,36 @@ function subStrings([word1, word2]) {
 
 //------------------//------------------TASKS  NO.2------------------//------------------//
 
-function numberHappy(){
-
+function numberHappy() {
+    // Var
     var inputNumber = document.getElementById("inputNumber").value;
-    var inputHappy = document.getElementById("resultHappy").value;
+    var num = inputNumber *1;
 
-    var inputNumberC = inputNumber * 1;
+    //Validations
+    if (num < 0) return document.getElementById("resultHappy").value = "I'm negative, I don't have to tell you";
 
+    if (num === 1 || num === 7) return document.getElementById("resultHappy").value = "I'm happy even though I am young";
+
+    if (num <= 9) return document.getElementById("resultHappy").value = "I'm not happy, I'm very young";
+
+        
+    boolean = this.isHappyNumber(num);
+
+        if (boolean == true) {
+            document.getElementById("resultHappy").value = "I'm happy, and you?";
+        } else {
+            document.getElementById("resultHappy").value = "I'm not happy but the important thing is health";
+        }
 }
+
+function isHappyNumber(num) {
+    if (num === 1 || num === 7)  return true
+    if (num < 10) return false
+        
+    let array = (num + '').split('') 
+    let nSum = 0
+    for (let i = 0; i < array.length; i++) {
+        nSum = array[i] **2 + nSum
+    }
+    return isHappyNumber(nSum)
+};
