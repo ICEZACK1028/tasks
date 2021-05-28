@@ -138,3 +138,7 @@ function isHappyNumber(num) {
     }
     return isHappyNumber(nSum)
 };
+//------------------//------------------TASKS  NO.3------------------//------------------//
+function palindrome(){
+
+}

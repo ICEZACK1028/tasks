@@ -1,0 +1,12 @@
+body{
+    background-color: #152733;
+    color: #fff;
+}
+.tasks{
+    margin:  10px;
+    border-radius: 5px;
+}
+
+.tasks label{
+    font-size: 20px;
+}
