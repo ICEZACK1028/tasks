@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+</head>
+<body>
+    <h1>Task 1: Substring with Concatenation of All Words</h1>
+    <form id = "form">
+        <label for="string">String:</label><br>
+        <input id="string" name="string" type="text" placeholder="write a word"></input>
+
+        <input type="button" onclick="withoutSpace2(value)" value="Convert to"></input><br>
+
+        <label for="array">Word:</label><br>
+        <input id="array" type="text" placeholder="write a word"></input><br>
+
+        <label for="action">Action:</label><br>
+        <input id="action" type="text" placeholder="write a word"></input>
+
+        <input type="button" onclick="text()" value="text:">
+        <!-- <input id="array" type="button" onclick="sayHola()" value="Decir HOla"></input>
+        <button onclick="sayHola()">Di Hola</button> -->
+        <!-- <input type="text" name="nombre" id="nombre" placeholder="NOMBRE" class="form-control" autocomplete="off"> -->
+    </form>
+    
+
+    <script>
+        // function withoutSpace(){
+        //     var array = [];
+        //     for(let i = 0; )
+        // }
+
+        var string, result;
+
+        function text(){
+            string = document.getElementById("string").value;
+            alert(string);
+        }
+
+        function withoutSpace1() {
+            var regEx = new RegExp(' ', 'g');
+            var text = document.getElementById("string").value;
+            text.replace(regEx, '');
+            document.getElementById("action").value = text;
+        }
+
+        function withoutSpace2(frase) {
+        let palabras = frase.split(' ')
+        return palabras.join('')
+        }
+
+        function withoutSpace() {
+            var regEx = new RegExp(' ', 'g');
+
+            action.value = string.value.replace(regEx, '');
+        }
+
+        // function sayHola() {
+        //     alert("Hola");
+        // }
+
+    </script>
+</body>
+</html>
