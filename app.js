@@ -113,9 +113,9 @@ function numberHappy() {
     //Validations
     if (num < 0) return document.getElementById("resultHappy").value = "I'm negative, I don't have to tell you";
 
-    if (num === 1 || num === 7) return document.getElementById("resultHappy").value = "I'm happy even though I am young";
+    if (num === 1 || num === 7) return document.getElementById("resultHappy").value = "I'm happy, and you?";
 
-    if (num <= 9) return document.getElementById("resultHappy").value = "I'm not happy, I'm very young";
+    if (num <= 9) return document.getElementById("resultHappy").value = "I'm not happy but the important thing is health";
 
         
     boolean = this.isHappyNumber(num);
@@ -140,5 +140,6 @@ function isHappyNumber(num) {
 };
 //------------------//------------------TASKS  NO.3------------------//------------------//
 function palindrome(){
-
+    var stringPalinder = document.getElementById("stringP").value;
+    alert();
 }
